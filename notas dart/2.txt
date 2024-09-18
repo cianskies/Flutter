@@ -1,0 +1,15 @@
+void main() {
+    
+  bool? isActive = null;
+  if( isActive!=null){
+        if( isActive ){
+            print( 'Esta activo');
+        }else{
+            print( 'Esta inactivo');
+        }
+  }else{
+      print( 'isActive es null');
+  }
+
+  
+}

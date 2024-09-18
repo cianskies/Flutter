@@ -1,0 +1,16 @@
+void main() {
+    
+  // Strings
+  String nombre= 'Tony';
+  String apellido = 'Stark';
+  
+  
+//  nombre = 'Peter';
+  print('$nombre $apellido');
+  
+  // Numero
+  int empleados = 10;
+  double salario = 12.5;
+  
+  print('N empleados $empleados, su salario es $salario');
+}
