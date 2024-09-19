@@ -1,0 +1,30 @@
+
+void main() {
+    final superman = new Hero( 'Clark Kent');
+    final luthor= new Villian( 'Lex Luthor' );
+    print( superman );
+    print( luthor );
+}
+
+
+abstract class Character{
+    String? power;
+    String name;
+    
+    Character(this.name);
+    
+    @override
+    String toString(){
+        return '$name - $power'; 
+    }
+    
+}
+class Hero extends Character{
+    int goodWill=100;
+    Hero(String name): super(name);
+}
+class Villian extends Character{
+    int evilness= 200;
+    
+    Villian(String name): super(name);
+}

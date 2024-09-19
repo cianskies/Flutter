@@ -1,0 +1,40 @@
+
+void main() {
+    final doggie= Dog();
+    final kitty= Cat();
+//    doggie.emitSound();
+    animalSound(doggie);
+    animalSound(kitty);
+
+}
+
+
+void animalSound( Animal animal ){
+    
+    animal.emitSound();
+    
+}
+abstract class Animal{
+    int? paws;
+    
+
+    
+    void emitSound();
+}
+
+class Dog implements Animal{
+    int? paws;
+    
+    void emitSound() { 
+        print( 'Guaaau' );
+    }
+}
+
+class Cat implements Animal{
+    int? paws;
+    int? tail;
+    
+    void emitSound() { 
+        print( 'miauu' );
+    }
+}

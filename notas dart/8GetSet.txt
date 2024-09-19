@@ -1,0 +1,26 @@
+import 'dart:math' as math;
+void main() {
+    
+    final square = new Square(20);
+    
+    print ( 'area: ${square.area}');
+    square.area=2;
+    print ( 'area: ${square.area}');
+}
+class Square {
+    double side = 0;
+    double get area{
+        return this.calculateArea();
+    }
+    
+    set area(double value){
+        print( 'set: $value');
+        this.side=math.sqrt(value);
+    }
+    
+    Square (this.side);
+    
+    double calculateArea(){
+        return this.side * this.side;
+    }
+}

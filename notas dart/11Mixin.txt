@@ -1,0 +1,32 @@
+abstract class Animal{}
+
+abstract class Mammal extends Animal{}
+abstract class Bird extends Animal{}
+abstract class Fish extends Animal{}
+
+abstract class Flying { 
+    void fly() => print( 'Estoy volando');
+}
+abstract class Walker { 
+    void walk() => print( 'Estoy andando');
+}
+abstract class Swimmer { 
+    void swim() => print( 'Estoy nadando');
+}
+
+
+class Dolphin extends Mammal with Swimmer{
+}
+class Bat extends Mammal with Walker, Flying{
+    
+}
+void main() {
+    
+    final delfin= new Dolphin();
+    final batman= new Bat();
+    
+    batman.fly();
+    batman.walk();
+//    batman.swim();
+
+}

@@ -1,0 +1,21 @@
+void main() {
+    final wolverine= new Hero(name: 'Logan', power: 'Regen');
+    
+//    wolverine.name = 'Logan';
+//    wolverine.power = 'Regen';
+    print( wolverine );
+    
+}
+class Hero{
+    String name;
+    String power;
+    
+    Hero({ required this.name, required this.power});
+    
+    
+    @override
+    String toString(){
+        return 'nombre: ${this.name}, poder: ${this.power}';
+    }
+    
+}

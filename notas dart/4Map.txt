@@ -1,0 +1,16 @@
+void main() {
+    
+// En las <> contienen la llave y el valor, pedirá siempre un Stirng como llave y DYNAMIC
+// permite cualquier tipo de valor
+    Map<String, dynamic> people = {
+        'nombre' : 'Fernando',
+        'edad' : 35,
+        'soltero' : false
+    };
+
+//    print( people[ 'soltero' ] );
+
+    people.addAll({'padre' : 'Juan'})  ;
+    print( people );
+
+}

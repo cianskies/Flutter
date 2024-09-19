@@ -1,0 +1,30 @@
+void main() {
+    
+    final rawJson = {
+        'name' : 'Tony Stark',
+        'power' : 'money'
+    };
+
+    final stark = Hero.fromJson( rawJson );
+    print(stark);
+}
+class Hero{
+    String name;
+    String power;
+    
+    Hero({ required this.name, required this.power});
+    
+// usar ':' en vez de una llave en el constructor hace que el codigo tras ':' se ejecute en el momento que se crea
+// la clase. Si se usa '{}' el codigo se ejecuta despues de crear la instancia de la clase
+    Hero.fromJson( Map<String, String> json):
+        this.name= json['name']!,
+        this.power= json['power']!;
+    
+    
+    
+    @override
+    String toString(){
+        return 'nombre: ${this.name}, poder: ${this.power}';
+    }
+    
+}

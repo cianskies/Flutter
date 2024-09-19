@@ -1,0 +1,22 @@
+void main() {
+    final name = 'Rober';
+//   heyo(name);
+    
+//   heyo(name, 'encantado de conocerte!');
+// puedes mandar los argumentos en cualquier orden (ctrl+Espacio para mostrar los args de la funcion) 
+    heyo2( name: name, msg: 'buenas tardes!');
+}
+
+// Argumentos opcionales: rodeados en '[]', si no le pasas args a la funcion al ejecutarla usara
+// los args opcionales.
+void heyo( String name, [String msg='como estas?'] ){
+    print('Saludos $name, $msg');
+}
+//required impide que puedas mandar la clase sin los argumentos marcados con este
+void heyo2({
+    required String name, 
+    required String msg 
+    
+}) {
+    print( '$name, $msg' );
+}
