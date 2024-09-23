@@ -15,13 +15,15 @@ class CardSwiper extends StatelessWidget {
       height: size.height*0.5,
       color: AppThemes.primary,
       child: Swiper(
-        itemBuilder: (context, index) => const FadeInImage(
-          placeholder: NetworkImage( 'https://via.placeholder.com/300x400' ), 
-          image: NetworkImage( 'https://via.placeholder.com/300x400' )),
         itemCount: 10,
         layout: SwiperLayout.STACK,
         itemWidth: size.width * 0.6,
         itemHeight: size.height * 0.9,
+        itemBuilder: (_, index) => const FadeInImage(
+          color: Colors.amberAccent,
+          placeholder: NetworkImage( 'https://via.placeholder.com/300x400' ), 
+          image: NetworkImage( 'https://via.placeholder.com/300x400' ),
+          ),
 
         ),
     );
