@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "481576597998",
+    "project_id": "push-notifications-flutt-4876c",
+    "storage_bucket": "push-notifications-flutt-4876c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481576597998:android:172653aceb68e536ea36ff",
+        "android_client_info": {
+          "package_name": "com.roberto.push_notifications"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZC7aYxa3i8mQHg29rvF_wGB4PO7jHsaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
